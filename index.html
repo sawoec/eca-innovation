@@ -7,42 +7,63 @@
     <title>Otology and Hearing Innovation Week</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <style>
-        html,
         body {
-            height: 98%;
             margin: 0;
             font-family: Arial, sans-serif;
             background: #f5f5f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 20px;
         }
 
         .container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            gap: 20px;
         }
 
-        img,
-        object {
-            max-width: 100%;
-            max-height: 100%;
+        .poster {
+            background: white;
             border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        .poster img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .poster h2 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* Responsive grid */
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <!-- Change the file path to your flyer -->
-        <img src="assets/Affiche_eca_innovation_week.png" alt="Flyer" />
-        <!-- For PDF use this instead: -->
-        <!-- <object data="assets/Affiche_eca_innovation_week.pdf" type="application/pdf" width="100%" height="100%"></object> -->
+        <div class="poster">
+            <h2>Introduction</h2>
+            <img src="assets/Affiche_eca_innovation_week.png" alt="Introduction Poster" />
+        </div>
+        <div class="poster">
+            <h2>Version Française</h2>
+            <img src="assets/Programme - Semaine de l'otologie et de l'innovation auditive.png" alt="French Poster" />
+        </div>
+        <div class="poster">
+            <h2>English Version</h2>
+            <img src="assets/Program - Otology and hearing innovation week.png" alt="English Poster" />
+        </div>
     </div>
 </body>
 
