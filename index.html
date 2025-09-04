@@ -2,69 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Otology and Hearing Innovation Week</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            padding: 20px;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Otology and Hearing Innovation Week</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
 
-        .container {
-            max-width: 2000px;
-            margin: auto;
-            display: grid;
-            gap: 20px;
-        }
+    .container {
+      max-width: 1250px;
+      margin: auto;
+      display: grid;
+      gap: 20px;
+    }
 
-        .poster {
-            background: white;
-            border-radius: 8px;
-            padding: 4px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-            text-align: center;
-        }
+    .poster {
+      background: white;
+      border-radius: 8px;
+      padding: 4px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
 
-        .poster img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-        }
+    .poster img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
 
-        .poster h2 {
-            margin: 10px 0;
-            font-size: 1.2rem;
-            color: #333;
-        }
-
-        /* Responsive grid */
-        @media (min-width: 768px) {
-            .container {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-    </style>
+    /* Responsive grid */
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="poster">
-            <!-- <h2>Introduction</h2> -->
-            <img src="assets/Affiche_eca_innovation_week.png" alt="Introduction Poster" />
-        </div>
-        <div class="poster">
-            <!-- <h2>Version Française</h2> -->
-            <img src="assets/Programme - Semaine de l'otologie et de l'innovation auditive.png" alt="French Poster" />
-        </div>
-        <div class="poster">
-            <!-- <h2>English Version</h2> -->
-            <img src="assets/Program - Otology and hearing innovation week.png" alt="English Poster" />
-        </div>
+  <!-- English Posters -->
+  <div class="container">
+    <div class="poster">
+      <img src="assets/front-en.png" alt="English Poster Front" />
     </div>
+    <div class="poster">
+      <img src="assets/back-en.png" alt="English Poster Back" />
+    </div>
+  </div>
+
+  <!-- French Posters -->
+  <div class="container" style="margin-top: 40px;">
+    <div class="poster">
+      <img src="assets/front-fr.png" alt="French Poster Front" />
+    </div>
+    <div class="poster">
+      <img src="assets/back-fr.png" alt="French Poster Back" />
+    </div>
+  </div>
 </body>
 
 </html>
